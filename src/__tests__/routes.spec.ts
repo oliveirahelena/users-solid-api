@@ -49,6 +49,7 @@ describe("[PATCH] /users/:user_id/admin", () => {
       name: user.name,
       email: user.email,
     });
+    console.log(response.body)
     expect(response.body.admin).toBe(true);
   });
 
